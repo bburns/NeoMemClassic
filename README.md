@@ -6,6 +6,8 @@ C++/MFC 50k sloc
 NeoMem is a kind of cross between a word processor and a database,
 with an interface similar to Windows Explorer. 
 
+<img src="screenshots/neomem800.png" />
+
 You can define types of objects you want to store, e.g. Projects, 
 Computers, Cars, and properties for them, e.g. Due Date, Processor, 
 License Plate. Objects can be stored in folders, and the complete
@@ -17,7 +19,7 @@ the BDocument, BData and BObject classes.
 Some things to do in the code are marked with //. comments, 
 or //, for lower priority items, or //! for high priority. 
 
-Rake is used to build the project, except for the actual compilation, 
+[Rake][1] is used to build the project, except for the actual compilation, 
 as calling msdev from the cmdline seems to leave out the version info. 
 Call rake -T to see the list of tasks it can do, e.g.
 
@@ -36,4 +38,4 @@ rake website   # Update the website
 ```
 
 
-[1] http://rake.rubyforge.org/
+[1]: http://rake.rubyforge.org/
