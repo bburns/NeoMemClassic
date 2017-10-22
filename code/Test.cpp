@@ -706,7 +706,7 @@ void CTest::DoTests(CNeoMem& app) {
 
 
 
-		doc.SaveAs();
+		// doc.SaveAs();
 
 
 		//, test file encryption, password function

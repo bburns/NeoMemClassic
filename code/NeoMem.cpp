@@ -167,7 +167,7 @@ CNeoMem::CNeoMem() :
   
 	// in vs10, some errors get caught at the wrong location, so add this
 	// see http://connect.microsoft.com/VisualStudio/feedback/details/563622/mfc-default-exception-handling-causes-problems-with-activation-context
-	AfxSetAmbientActCtx(FALSE);
+	// AfxSetAmbientActCtx(FALSE);
 }
 
 

@@ -20,8 +20,10 @@
 // Visual C++ no longer supports targeting Windows 95, Windows 98, Windows ME, or Windows NT. 
 // http://msdn.microsoft.com/en-us/library/6sehtctf.aspx
 // This targets the Windows 2000 operating system.
-#define WINVER 0x0500
-#define _WIN32_WINNT 0x0500
+// #define WINVER 0x0500
+// #define _WIN32_WINNT 0x0500
+#define WINVER NTDDI_WINXP //0x05010000
+#define _WIN32_WINNT NTDDI_WINXP
 
 
 #ifdef _WIN32_WINNT

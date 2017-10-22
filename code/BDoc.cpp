@@ -4009,8 +4009,9 @@ void BDoc::OnFileSave()
 
 
 
-void BDoc::SetEncryption(EncryptionTypes nEncryption, LPCTSTR pszPassword = NULL) {
-	m_nEncryptionType = nEncryption;
+// void BDoc::SetEncryption(EncryptionTypes nEncryption, LPCTSTR pszPassword = NULL) {
+void BDoc::SetEncryption(EncryptionTypes nEncryption, LPCTSTR pszPassword) {
+		m_nEncryptionType = nEncryption;
 //?	if (pszPassword)
 		m_strPassword = pszPassword;
 }

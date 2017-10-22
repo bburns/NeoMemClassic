@@ -1505,6 +1505,9 @@
     <None Include="..\resources\Resource.hm" />
     <None Include="..\resources\Resource.hm" />
     <None Include="..\resources\Resource.hm" />
+    <None Include="..\resources\Resource.hm" />
+    <None Include="..\resources\Resource.hm" />
+    <None Include="..\resources\Resource.hm" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\help\NeoMem.hhp">
