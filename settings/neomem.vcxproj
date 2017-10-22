@@ -46,8 +46,8 @@
     <LibraryPath>C:\apps\dev\msvs6\VC98\MFC\Lib;C:\apps\dev\msvs6\VC98\Lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IntDir>..\$(Configuration)\</IntDir>
-    <OutDir>..\$(Configuration)\</OutDir>
+    <IntDir>..\builds\$(Configuration)\</IntDir>
+    <OutDir>..\builds\$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
