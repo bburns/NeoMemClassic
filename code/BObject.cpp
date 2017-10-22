@@ -2792,7 +2792,8 @@ void BObject::ClearFlag(ULONG lngFlag) {
 
 
 // Get the value of the specified flag for this object. (flagNoDelete, flagHighPriority, etc).
-inline BOOL BObject::GetFlag(ULONG lngFlag)
+// inline BOOL BObject::GetFlag(ULONG lngFlag) // removed inline because caused link errors
+BOOL BObject::GetFlag(ULONG lngFlag)
 {
 	return (m_lngFlags & lngFlag);
 }

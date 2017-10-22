@@ -13,6 +13,7 @@
   <PropertyGroup Label="Globals">
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{F0BF8766-20A7-5AA1-4D0F-44A6C90C95E4}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -39,8 +40,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\$(Configuration)\</OutDir>
-    <IntDir>..\$(Configuration)\</IntDir>
+    <OutDir>..\builds\$(Configuration)\</OutDir>
+    <IntDir>..\builds\$(Configuration)\</IntDir>
     <IncludePath>C:\apps\dev\msvs6\VC98\MFC\Include;C:\apps\dev\msvs6\VC98\ATL\Include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\apps\dev\msvs6\VC98\MFC\Lib;C:\apps\dev\msvs6\VC98\Lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
