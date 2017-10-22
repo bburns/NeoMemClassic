@@ -2511,17 +2511,20 @@ void CNeoMem::Export(BObject *pobj) {
 
 	// Initialize file dialog
 //, switch to cfiledialog, or fix ex
-	CFileDialogEx dlg(FALSE, strExtension, strFilename, 
-		OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, (LPCTSTR) app.m_strExportFilter);
+//	CFileDialogEx dlg(FALSE, strExtension, strFilename,
+//		OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, (LPCTSTR)app.m_strExportFilter);
+	CFileDialog dlg(FALSE, strExtension, strFilename,
+		OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, (LPCTSTR)app.m_strExportFilter);
 	CString strCaption = _T("Export to file");
 	dlg.m_ofn.lpstrTitle = strCaption;
-	dlg.m_bShowOptionButton = FALSE; // because exporting, don't need save options!
+//	dlg.m_bShowOptionButton = FALSE; // because exporting, don't need save options!
 	
 	// Get export filename
 	if (dlg.DoModal() == IDOK) {
 		strFilename = dlg.GetPathName(); // eg full/path/test.rtf
-		int nFilterIndex = dlg.GetFilterIndex() - 1; // go from one-based to zero-based!
-		eFileFormat nFormat = app.m_listExportFormats.GetFormatId(nFilterIndex);
+//		int nFilterIndex = dlg.GetFilterIndex() - 1; // go from one-based to zero-based!
+//		eFileFormat nFormat = app.m_listExportFormats.GetFormatId(nFilterIndex);
+		eFileFormat nFormat = app.m_listExportFormats.GetFormatId(0);
 		strExtension = dlg.GetFileExt(); // eg rtf
 //		strFolder = dlg.GetFolderPath(); // bombs
 
