@@ -1,5 +1,5 @@
 **NeoMem, an information manager**  
-Version 1.2d  
+Version 1.2d for Windows  
 C++/MFC 50k sloc
 <hr/>
 
@@ -12,6 +12,13 @@ You can define types of objects you want to store, e.g. Projects,
 Computers, Cars, and properties for them, e.g. Due Date, Processor, 
 License Plate. Objects can be stored in folders, and the complete
 tree of objects is available in a pane on the left side. 
+
+The latest release is available here - https://github.com/bburns/NeoMem/releases.
+
+A discussion of the project status is here - https://github.com/bburns/NeoMem/issues/1.
+
+
+## The Code
 
 The backend for the program is called Brooklyn, and is contained in
 the BDocument, BData and BObject classes. 
@@ -37,5 +44,8 @@ rake version   # Update the project's version information
 rake website   # Update the website
 ```
 
+## License
+
+MIT License
 
 [1]: http://rake.rubyforge.org/
